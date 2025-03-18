@@ -52,8 +52,8 @@ This project analyzes financial news articles, classifies them based on sentimen
 ## ⚙️ Installation & Setup
 ### Clone the repository:
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/Ahmadgatany/News-Ranker-Analyzer.git
+cd News-Ranker-Analyzer
 ```
 ### Install dependencies:
 ```bash
