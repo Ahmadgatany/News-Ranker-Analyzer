@@ -1,0 +1,18 @@
+stages:
+  preprocess:
+    cmd: python src/data_preprocessing.py
+    deps:
+      - src/data_preprocessing.py
+      - data/raw/news_sentiment.csv
+    outs:
+      - data/processed/news_sentiment_cleaned.csv
+
+  train:
+    cmd: python src/sentiment_analysis.py
+    deps:
+      - src/sentiment_analysis.py
+      - data/processed/news_sentiment_cleaned.csv
+    outs:
+      - models/logistic_regression_model.pkl
+      - models/tfidf_vectorizer.pkl
+      - data/sentiment_results/logistic_regression_sentiment_results.csv

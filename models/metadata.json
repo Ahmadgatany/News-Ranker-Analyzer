@@ -1,0 +1,8 @@
+{
+    "model_name": "Logistic Regression Sentiment Model",
+    "version": "1.0",
+    "training_date": "2025-03-17",
+    "dataset": "news_sentiment_cleaned.csv",
+    "vectorizer": "TF-IDF (max_features=5000)",
+    "accuracy": "0.8493"
+}

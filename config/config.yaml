@@ -1,0 +1,16 @@
+mlflow:
+  experiment_name: "News Ranker & Analyzer"
+  tracking_uri: "file:./mlruns"
+
+data_paths:
+  processed: "data/processed/news_sentiment_cleaned.csv"
+  results: "data/sentiment_results/logistic_regression_sentiment_results.csv"
+
+model_params:
+  model_name: "LogisticRegression"
+  max_iter: 500
+  vectorizer_max_features: 10000
+
+output_paths:
+  model: "models/logistic_regression_model.pkl"
+  vectorizer: "models/tfidf_vectorizer.pkl"

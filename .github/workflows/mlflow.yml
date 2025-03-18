@@ -1,0 +1,40 @@
+name: MLflow Training & Deployment
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  train_and_log_model:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install mlflow boto3 google-cloud-storage
+
+      - name: Train Model & Log with MLflow
+        env:
+          MLFLOW_TRACKING_URI: "http://your-mlflow-server:5000"
+        run: |
+          python src/train_model.py
+
+      - name: Compare Model Performance
+        run: python src/compare_models.py
+
+      - name: Deploy Model if it's Better
+        run: |
+          python src/deploy_model.py

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/User/OneDrive/Desktop/News%20Ranker%20%26%20Analyzer/mlruns/469155832489433990/48a9e77e20e545f3b911efdef459b91c/artifacts
+end_time: 1742258702773
+entry_point_name: ''
+experiment_id: '469155832489433990'
+lifecycle_stage: active
+run_id: 48a9e77e20e545f3b911efdef459b91c
+run_name: rogue-koi-652
+run_uuid: 48a9e77e20e545f3b911efdef459b91c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742258693330
+status: 3
+tags: []
+user_id: User

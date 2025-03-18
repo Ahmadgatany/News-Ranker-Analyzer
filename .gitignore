@@ -1,1 +1,22 @@
-data/raw/news_sentiment.csv
+# Ignore raw data files (except version-controlled ones)
+data/raw/
+
+# Ignore processed and temporary data
+data/processed/
+data/sentiment_results/
+data/ranking_results/
+
+# Ignore DVC cache and temp files
+/.dvc/cache/
+/.dvc/tmp/
+/.dvc/config.local
+
+# Ignore environment and dependency files
+venv/
+env/
+*.venv
+__pycache__/
+*.pyc
+*.pyo
+
+

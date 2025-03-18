@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/User/OneDrive/Desktop/News%20Ranker%20%26%20Analyzer/mlruns/469155832489433990/b9cfc0cbe63a401aa40848b043fcc635/artifacts
+end_time: 1742259095295
+entry_point_name: ''
+experiment_id: '469155832489433990'
+lifecycle_stage: active
+run_id: b9cfc0cbe63a401aa40848b043fcc635
+run_name: suave-wren-869
+run_uuid: b9cfc0cbe63a401aa40848b043fcc635
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742259090161
+status: 3
+tags: []
+user_id: User
